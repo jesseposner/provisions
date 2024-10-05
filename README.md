@@ -1,8 +1,7 @@
 # Provisions Protocol Implementation
 
-[![Build Status](https://github.com/jesseposner/provisions/actions/workflows/ci.yml/badge.svg)](https://github.com/jesseposner/provisions/actions)
+[![Build Status](https://github.com/jesseposner/provisions/actions/workflows/ci.yml/badge.svg)](https://github.com/jesseposner/provisions/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python Versions](https://img.shields.io/pypi/pyversions/provisions.svg)](https://pypi.org/project/provisions/)
 
 A Python implementation of the Provisions protocol, featuring elliptic curve cryptography primitives for the secp256k1 curve.
 
@@ -38,4 +37,3 @@ pytest
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
