@@ -24,6 +24,8 @@ from .constants import (
 
 from .point import Point, G
 
+from .hash_to_curve import HashToCurve
+
 __all__ = [
     "P",
     "N",
@@ -33,4 +35,5 @@ __all__ = [
     "Gy",
     "Point",
     "G",
+    "HashToCurve",
 ]
