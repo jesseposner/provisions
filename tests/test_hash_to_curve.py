@@ -176,3 +176,14 @@ def test_expand_message_xmd_different_messages(
     output1 = HashToCurve.expand_message_xmd(msg1, DST, len_in_bytes)
     output2 = HashToCurve.expand_message_xmd(msg2, DST, len_in_bytes)
     assert output1 != output2
+
+
+@given(msg=messages, len_in_bytes=st.integers(min_value=8161), DST=tags)
+def test_expand_message_xmd_large_len_in_bytes(
+    msg: bytes, len_in_bytes: int, DST: bytes
+) -> None:
+    with pytest.raises(
+        ValueError,
+        match="Ell is too large",
+    ):
+        HashToCurve.expand_message_xmd(msg, DST, len_in_bytes)
