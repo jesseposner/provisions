@@ -20,6 +20,7 @@ from .constants import (
     B,
     Gx,
     Gy,
+    Z,
 )
 
 from .point import Point, G
@@ -35,5 +36,6 @@ __all__ = [
     "Gy",
     "Point",
     "G",
+    "Z",
     "HashToCurve",
 ]
